@@ -8,6 +8,7 @@ export default function SmoothScroll() {
       smoothWheel: true,
       touchMultiplier: 1.1,
     });
+    window.__suzakuLenis = lenis;
 
     let frame = 0;
     const raf = (time: number) => {
@@ -18,6 +19,7 @@ export default function SmoothScroll() {
 
     return () => {
       cancelAnimationFrame(frame);
+      if (window.__suzakuLenis === lenis) delete window.__suzakuLenis;
       lenis.destroy();
     };
   }, []);

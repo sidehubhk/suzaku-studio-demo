@@ -19,6 +19,11 @@ export default function BootSequence() {
 
   const enter = () => {
     sessionStorage.setItem("suzaku-boot", "1");
+    document.body.style.overflow = "";
+    window.__suzakuLenis?.scrollTo(0, { immediate: true });
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
     setShow(false);
   };
 
@@ -39,7 +44,7 @@ export default function BootSequence() {
               transition={{ delay: 0.2 }}
               className="font-display text-xs tracking-[0.5em] uppercase text-neon"
             >
-              Transmission // SUZAKU
+              SUZAKU STUDIO
             </motion.p>
             <motion.h2
               initial={{ opacity: 0, y: 18 }}
