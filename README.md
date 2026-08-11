@@ -6,7 +6,7 @@ A cinematic Astro rebuild of the [SUZAKU Games](https://www.suzakugamestudio.com
 
 Review mode is **ON** by default (`REVIEW_LOCK_ENABLED` in `src/data/review.ts`).
 
-**Default password:** `suzaku-review-3d`  
+**Default password:** `CPHK-Suzaku`  
 Share it with your client privately (not on the page).
 
 Change password:
