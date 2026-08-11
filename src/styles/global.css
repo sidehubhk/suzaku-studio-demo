@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Chakra Petch", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Shippori Mincho", "Noto Serif JP", Georgia, serif;
+  --font-body: "Sora", ui-sans-serif, system-ui, sans-serif;
+
+  --color-void: #030306;
+  --color-ink: #0a0b10;
+  --color-panel: #10121a;
+  --color-fog: #1a1d2b;
+  --color-bone: #e8e2d6;
+  --color-mute: #9a9488;
+  --color-phoenix: #e23a2b;
+  --color-ember: #ff6b3d;
+  --color-neon: #3de0ff;
+  --color-neon-dim: #1a8fa8;
+  --color-blood: #8b1420;
+}
+
+@layer base {
+  html {
+    background: var(--color-void);
+    color: var(--color-bone);
+    scroll-behavior: auto;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--color-void);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-phoenix) 70%, transparent);
+    color: white;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scanlines {
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 2px,
+      rgb(0 0 0 / 0.12) 2px,
+      rgb(0 0 0 / 0.12) 4px
+    );
+    pointer-events: none;
+  }
+
+  .grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+    opacity: 0.08;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+}

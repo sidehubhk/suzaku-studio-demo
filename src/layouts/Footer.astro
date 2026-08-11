@@ -1,0 +1,26 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-white/10 bg-void py-10">
+  <div
+    class="mx-auto flex max-w-7xl flex-col gap-6 px-5 md:flex-row md:items-center md:justify-between md:px-8"
+  >
+    <div>
+      <p class="font-display text-sm tracking-[0.28em] uppercase text-bone">SUZAKU Games</p>
+      <p class="mt-2 font-serif text-sm text-mute">
+        Demo rebuild for local preview — vibe inspired by the studio’s cyberpunk &amp; horror catalog.
+      </p>
+    </div>
+    <div class="flex flex-wrap gap-5 font-display text-xs tracking-[0.2em] uppercase text-mute">
+      <a class="transition hover:text-neon" href="https://www.suzakugamestudio.com/" target="_blank" rel="noreferrer"
+        >Original Site</a
+      >
+      <a class="transition hover:text-neon" href="https://www.patreon.com/suzaku_games" target="_blank" rel="noreferrer"
+        >Patreon</a
+      >
+      <a class="transition hover:text-neon" href="https://x.com/SUZAKU_Games" target="_blank" rel="noreferrer">X</a>
+      <span class="text-fog">© {year}</span>
+    </div>
+  </div>
+</footer>
