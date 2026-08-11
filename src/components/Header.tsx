@@ -15,7 +15,7 @@ export default function Header() {
       className="fixed inset-x-0 top-0 z-50 border-b backdrop-blur-md"
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-20 md:px-8">
-        <a href="#top" className="group flex items-center gap-3" aria-label="SUZAKU Games home">
+        <a href="/" className="group flex items-center gap-3" aria-label="SUZAKU Games home">
           <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-sm border border-neon/30 bg-ink">
             <span className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#e23a2b66,transparent_60%)]" />
             <svg viewBox="0 0 24 24" className="relative h-5 w-5 text-phoenix" aria-hidden>
@@ -31,13 +31,16 @@ export default function Header() {
         </a>
 
         <nav className="hidden items-center gap-8 font-display text-sm tracking-[0.2em] uppercase text-mute md:flex">
-          <a href="#games" className="transition hover:text-neon">
+          <a href="/#featured" className="transition hover:text-neon">
+            Featured
+          </a>
+          <a href="/#games" className="transition hover:text-neon">
             Games
           </a>
-          <a href="#studio" className="transition hover:text-neon">
+          <a href="/#studio" className="transition hover:text-neon">
             Studio
           </a>
-          <a href="#signal" className="transition hover:text-neon">
+          <a href="/#signal" className="transition hover:text-neon">
             Signal
           </a>
         </nav>
@@ -52,7 +55,7 @@ export default function Header() {
             X / Twitter
           </a>
           <a
-            href="#games"
+            href="/#games"
             className="border border-phoenix/60 bg-phoenix/15 px-3 py-2 font-display text-xs tracking-[0.22em] uppercase text-bone transition hover:border-phoenix hover:bg-phoenix/30"
           >
             Escape

@@ -4,17 +4,29 @@ import Footer from '../layouts/Footer.astro';
 import SmoothScroll from '../components/SmoothScroll';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import StatsBar from '../components/StatsBar';
+import FeaturedGame from '../components/FeaturedGame';
 import Games from '../components/Games';
+import ScreenshotMarquee from '../components/ScreenshotMarquee';
 import Manifesto from '../components/Manifesto';
 import Newsletter from '../components/Newsletter';
+import BootSequence from '../components/BootSequence';
+import CustomCursor from '../components/CustomCursor';
+import AmbientAudio from '../components/AmbientAudio';
 ---
 
 <BaseLayout>
   <SmoothScroll client:load />
+  <CustomCursor client:load />
+  <BootSequence client:load />
+  <AmbientAudio client:load />
   <Header client:load />
   <main>
     <Hero client:load />
+    <StatsBar client:visible />
+    <FeaturedGame client:visible />
     <Games client:visible />
+    <ScreenshotMarquee client:visible />
     <Manifesto client:visible />
     <Newsletter client:visible />
   </main>

@@ -1,61 +1,46 @@
+import raw from "./games.json";
+
 export type Game = {
   id: string;
+  steamAppId: number;
   title: string;
+  shortTitle: string;
   subtitle: string;
   status: string;
+  releaseDate: string;
+  comingSoon: boolean;
   blurb: string;
   cover: string;
+  header: string;
   href: string;
   accent: string;
+  setting: string;
+  protagonist: string;
+  genres: string[];
+  tags: string[];
+  features: string[];
+  developers: string[];
+  publishers: string[];
+  platforms: { windows: boolean; mac: boolean; linux: boolean };
+  price: string;
+  priceUsd: string;
+  reviewLabel: string;
+  reviewPct: number | null;
+  reviewCount: number | null;
+  achievements: number | null;
+  trailer: { name: string; hls: string | null; thumbnail: string };
+  screenshots: { thumb: string; full: string }[];
 };
 
-export const games: Game[] = [
-  {
-    id: "sense",
-    title: "Sense",
-    subtitle: "A Cyberpunk Ghost Story",
-    status: "Available Now",
-    blurb:
-      "Neo-Hong Kong folklore meets neon dread. Slow-burn survival horror where ghosts are glitches in reality.",
-    cover:
-      "https://images.squarespace-cdn.com/content/v1/60cb8352284fe753eb45551d/1623962378926-H6FX01GK1OWGS0PP6K6U/verticalgamecover6x9_template.png",
-    href: "https://store.steampowered.com/app/1120560/Sense___A_Cyberpunk_Ghost_Story/",
-    accent: "#3de0ff",
-  },
-  {
-    id: "midnight",
-    title: "SENSE/s: Midnight",
-    subtitle: "A ghost side-story",
-    status: "Available Now",
-    blurb:
-      "A tighter Japanese folklore haunting — atmospheric, intimate, and sharpened for dread.",
-    cover:
-      "https://images.squarespace-cdn.com/content/v1/60cb8352284fe753eb45551d/198ba01a-359f-4969-88de-e222615dfaff/co40yd.jpg",
-    href: "https://store.steampowered.com/app/1664430/SENSEs_Midnight/",
-    accent: "#e23a2b",
-  },
-  {
-    id: "panpan",
-    title: "Good Night Pan Pan",
-    subtitle: "PC / Steam",
-    status: "Available Now",
-    blurb:
-      "A quieter nightmare from the same studio DNA — uncanny, intimate, and hard to shake.",
-    cover:
-      "https://images.squarespace-cdn.com/content/v1/60cb8352284fe753eb45551d/fd492b56-c74f-4f30-8928-6580fa2bcb9a/Game-Page-Box-Art_Good-Night-Pan-Pan-Inits-320x480.jpg",
-    href: "https://store.steampowered.com/app/3109270/Good_Night_Pan_Pan/",
-    accent: "#ff6b3d",
-  },
-  {
-    id: "surangama",
-    title: "SURANGAMA",
-    subtitle: "In development",
-    status: "Coming Soon",
-    blurb:
-      "The next chapter of pure escapism — still cloaked, still hungry for your attention.",
-    cover:
-      "https://images.squarespace-cdn.com/content/v1/60cb8352284fe753eb45551d/c08b89bd-821b-4801-9284-bf4a523ad7ea/coanqp.jpg",
-    href: "https://store.steampowered.com/app/3714430/SURANGAMA/",
-    accent: "#c9a227",
-  },
+export const games = raw as Game[];
+
+export function getGame(id: string) {
+  return games.find((g) => g.id === id);
+}
+
+export const studioStats = [
+  { label: "Titles", value: "4" },
+  { label: "Sense Reviews", value: "83%+" },
+  { label: "Founded", value: "2017" },
+  { label: "Signal", value: "Escapism" },
 ];

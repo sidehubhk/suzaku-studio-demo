@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Footer from '../../layouts/Footer.astro';
+import Header from '../../components/Header';
+import GameDetail from '../../components/GameDetail';
+import CustomCursor from '../../components/CustomCursor';
+import AmbientAudio from '../../components/AmbientAudio';
+import SmoothScroll from '../../components/SmoothScroll';
+import { games, getGame } from '../../data/games';
+
+export function getStaticPaths() {
+  return games.map((game) => ({ params: { slug: game.id } }));
+}
+
+const { slug } = Astro.params;
+const game = getGame(slug!);
+if (!game) {
+  return Astro.redirect('/');
+}
+---
+
+<BaseLayout title={`${game.shortTitle} | SUZAKU Games`} description={game.blurb}>
+  <SmoothScroll client:load />
+  <CustomCursor client:load />
+  <AmbientAudio client:load />
+  <Header client:load />
+  <main>
+    <GameDetail client:load game={game} />
+  </main>
+  <Footer />
+</BaseLayout>

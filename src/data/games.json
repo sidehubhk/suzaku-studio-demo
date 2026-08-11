@@ -1,0 +1,359 @@
+[
+  {
+    "id": "sense",
+    "steamAppId": 1120560,
+    "title": "Sense - 不祥的预感: A Cyberpunk Ghost Story",
+    "shortTitle": "Sense",
+    "subtitle": "Neo-Hong Kong folklore meets neon dread",
+    "status": "Available Now",
+    "releaseDate": "25 Aug, 2020",
+    "comingSoon": false,
+    "blurb": "A 2.5D horror game inspired by Clock Tower and Fatal Frame, mixing cyberpunk with traditional Cantonese folklore. With careful attention to pacing, atmosphere and storytelling, Sense hopes to return the horror genre to its roots by celebrating visceral horror and the slow, fearful creep of dread.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/library_600x900.jpg",
+    "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/header.jpg?t=1750956707",
+    "href": "https://store.steampowered.com/app/1120560/Sense___A_Cyberpunk_Ghost_Story/",
+    "accent": "#3de0ff",
+    "setting": "Neo Hong Kong, 2083",
+    "protagonist": "Mei-Lin Mak",
+    "genres": [
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "tags": [
+      "Cyberpunk",
+      "Horror",
+      "Folklore",
+      "2.5D",
+      "Exploration"
+    ],
+    "features": [
+      "2.5D survival horror inspired by Clock Tower & Fatal Frame",
+      "Cantonese folklore under cyberpunk neon",
+      "14 lost souls + hidden ghost photos",
+      "Atmosphere-first dread — no cheap jump-scare spam",
+      "Explore Chong Sing Apartments & family curse mystery"
+    ],
+    "developers": [
+      "Suzaku"
+    ],
+    "publishers": [
+      "Top Hat Studios, Inc."
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": true,
+      "linux": true
+    },
+    "price": "HK$ 89.00",
+    "priceUsd": "$19.99",
+    "reviewLabel": "Very Positive",
+    "reviewPct": 83,
+    "reviewCount": 484,
+    "achievements": 13,
+    "trailer": {
+      "name": "New Trailer",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1120560/305980/5f3a146607b4f9f1ad5cdbf143a54e4d20eb5618/1751191230/hls_264_master.m3u8?t=1597776490",
+      "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256797360/movie.293x165.jpg?t=1597776490"
+    },
+    "screenshots": [
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_015e3964c873287668c61ac7576869875b8aed90.600x338.jpg?t=1750956707",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_015e3964c873287668c61ac7576869875b8aed90.1920x1080.jpg?t=1750956707"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_545a51980b8712a469ab805fd1ad8a9026049743.600x338.jpg?t=1750956707",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_545a51980b8712a469ab805fd1ad8a9026049743.1920x1080.jpg?t=1750956707"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_0e7b866de5e74e9d9d124ed9529107c27abcb34c.600x338.jpg?t=1750956707",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_0e7b866de5e74e9d9d124ed9529107c27abcb34c.1920x1080.jpg?t=1750956707"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_783ab05816ab1f30be29f184984e91673abc1206.600x338.jpg?t=1750956707",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_783ab05816ab1f30be29f184984e91673abc1206.1920x1080.jpg?t=1750956707"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_7fa1314e8f1a2c033f20ee65e2942ac6e81b0613.600x338.jpg?t=1750956707",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_7fa1314e8f1a2c033f20ee65e2942ac6e81b0613.1920x1080.jpg?t=1750956707"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_6f24c69045bfc1e33abefa91c117bca93edff5bb.600x338.jpg?t=1750956707",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_6f24c69045bfc1e33abefa91c117bca93edff5bb.1920x1080.jpg?t=1750956707"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_011e02b5ad2cf35a4d2428df5226de934988325f.600x338.jpg?t=1750956707",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_011e02b5ad2cf35a4d2428df5226de934988325f.1920x1080.jpg?t=1750956707"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_11949b0434a3c95902f44e6a15c12c31b441f381.600x338.jpg?t=1750956707",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1120560/ss_11949b0434a3c95902f44e6a15c12c31b441f381.1920x1080.jpg?t=1750956707"
+      }
+    ]
+  },
+  {
+    "id": "midnight",
+    "steamAppId": 1664430,
+    "title": "SENSEs: Midnight",
+    "shortTitle": "SENSE/s: Midnight",
+    "subtitle": "Classic tank-control terror in Ikebukuro",
+    "status": "Available Now",
+    "releaseDate": "22 Jul, 2022",
+    "comingSoon": false,
+    "blurb": "As occult researcher Uesugi Kaho, discover the secret of the \"Midnight Door\" while avoiding the grip of it’s victims’ corrupted spirits. Inspired by classic survival horror titles; explore, investigate and survive a terrifying and deadly night in the abandoned Ikebukuro Walking Park.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/library_600x900.jpg",
+    "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/header.jpg?t=1747086424",
+    "href": "https://store.steampowered.com/app/1664430/SENSEs_Midnight/",
+    "accent": "#e23a2b",
+    "setting": "Ikebukuro Walking Park, Japan",
+    "protagonist": "Uesugi Kaho",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie",
+      "RPG"
+    ],
+    "tags": [
+      "Survival Horror",
+      "Fixed Camera",
+      "Japanese Folklore",
+      "Anthology"
+    ],
+    "features": [
+      "Full 3D survival horror with tank controls & fixed cameras",
+      "Investigate the Midnight Door urban legend",
+      "Inventory management, hiding, relentless Onryo pursuit",
+      "First entry in the SENSE/s anthology side-stories",
+      "Japanese folklore atmosphere"
+    ],
+    "developers": [
+      "SUZAKU Games"
+    ],
+    "publishers": [
+      "Eastasiasoft Limited"
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": false,
+      "linux": false
+    },
+    "price": "HK$ 62.00",
+    "priceUsd": "$11.99",
+    "reviewLabel": "Mixed",
+    "reviewPct": 67,
+    "reviewCount": 31,
+    "achievements": 6,
+    "trailer": {
+      "name": "SENSEs: Midnight Preview Trailer",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/1664430/474655/907773f675c250a1350d9a42e517d3a14851271c/1751016650/hls_264_master.m3u8?t=1656819192",
+      "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256893476/movie.293x165.jpg?t=1656819192"
+    },
+    "screenshots": [
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_d855fd2a8cd763c62b3b63ddf479166b99381c76.600x338.jpg?t=1747086424",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_d855fd2a8cd763c62b3b63ddf479166b99381c76.1920x1080.jpg?t=1747086424"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_d965d989f4a40ed823ef050ab3bfd9e94d6b43cc.600x338.jpg?t=1747086424",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_d965d989f4a40ed823ef050ab3bfd9e94d6b43cc.1920x1080.jpg?t=1747086424"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_b38f1458bf1911fd5dc50c08a93bc43c0384d2ee.600x338.jpg?t=1747086424",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_b38f1458bf1911fd5dc50c08a93bc43c0384d2ee.1920x1080.jpg?t=1747086424"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_9d65462183427a0ac3655989bfd9ef67c850e2e5.600x338.jpg?t=1747086424",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_9d65462183427a0ac3655989bfd9ef67c850e2e5.1920x1080.jpg?t=1747086424"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_f9d69074ba07b580a6f7b549bb96ddd12358d082.600x338.jpg?t=1747086424",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_f9d69074ba07b580a6f7b549bb96ddd12358d082.1920x1080.jpg?t=1747086424"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_1b56a3728167ef760cd7b1705128681d13fdb900.600x338.jpg?t=1747086424",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_1b56a3728167ef760cd7b1705128681d13fdb900.1920x1080.jpg?t=1747086424"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_7fa7c92939dcca32be70a94a13571e00b1aeeab4.600x338.jpg?t=1747086424",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_7fa7c92939dcca32be70a94a13571e00b1aeeab4.1920x1080.jpg?t=1747086424"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_05c0e431facb599f140d4327a0ededcaef52fa68.600x338.jpg?t=1747086424",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1664430/ss_05c0e431facb599f140d4327a0ededcaef52fa68.1920x1080.jpg?t=1747086424"
+      }
+    ]
+  },
+  {
+    "id": "pan-pan",
+    "steamAppId": 3109270,
+    "title": "Good Night Pan Pan",
+    "shortTitle": "Good Night Pan Pan",
+    "subtitle": "Graveyard shift in a haunted Sham Shui Po mall",
+    "status": "Available Now",
+    "releaseDate": "6 Sep, 2024",
+    "comingSoon": false,
+    "blurb": "Explore and investigate the dimly lit halls of a nearly abandoned shopping mall in cyberpunk Hong Kong all while being stalked by a mysterious Yuan Gui, a malevolent spirit hell-bent on taking your soul. Good Night Pan Pan is a short 3rd person survival horror homage to Cantonese horror and culture!",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/library_600x900.jpg",
+    "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/header.jpg?t=1736869775",
+    "href": "https://store.steampowered.com/app/3109270/Good_Night_Pan_Pan/",
+    "accent": "#ff6b3d",
+    "setting": "Sham Shui Po shopping arcade, Hong Kong",
+    "protagonist": "Li Li Tse",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Indie"
+    ],
+    "tags": [
+      "Short Horror",
+      "Hong Kong",
+      "Mascot Horror",
+      "Stealth"
+    ],
+    "features": [
+      "Short-form 3rd-person survival horror",
+      "Evade a vengeful Yuan Gui during Ghost Festival",
+      "Cantonese true crime + folklore + cyberpunk DNA",
+      "Puzzle solving & Taoist resource defense",
+      "From the makers of Sense"
+    ],
+    "developers": [
+      "SUZAKU Games"
+    ],
+    "publishers": [
+      "SUZAKU Games"
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": false,
+      "linux": false
+    },
+    "price": "HK$ 26.00",
+    "priceUsd": "$3.99",
+    "reviewLabel": "Positive",
+    "reviewPct": 87,
+    "reviewCount": 33,
+    "achievements": 3,
+    "trailer": {
+      "name": "Halloween Update",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/3109270/776148/57a1ff2714b196e163dcf0a2066458b1f16a779b/1750871596/hls_264_master.m3u8?t=1736869763",
+      "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257067776/08ff67475c594841e03395fd290c4909cca9d6de/movie_600x337.jpg?t=1736869763"
+    },
+    "screenshots": [
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_507d841ebb40d3c8b44853548f46e1aab552ee20.600x338.jpg?t=1736869775",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_507d841ebb40d3c8b44853548f46e1aab552ee20.1920x1080.jpg?t=1736869775"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_a6c497493a928ad2484563734ef51a18fa866a89.600x338.jpg?t=1736869775",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_a6c497493a928ad2484563734ef51a18fa866a89.1920x1080.jpg?t=1736869775"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_9f153d777657ee9ab69c11c4e3fb0c62246644e4.600x338.jpg?t=1736869775",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_9f153d777657ee9ab69c11c4e3fb0c62246644e4.1920x1080.jpg?t=1736869775"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_3e761f01064985cfe50916c4dd0aee07c83ccd57.600x338.jpg?t=1736869775",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_3e761f01064985cfe50916c4dd0aee07c83ccd57.1920x1080.jpg?t=1736869775"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_d05b9dbb3223b41876d7715ef2a2d3dd3c426955.600x338.jpg?t=1736869775",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_d05b9dbb3223b41876d7715ef2a2d3dd3c426955.1920x1080.jpg?t=1736869775"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_d7c0c48c9d2ebb6ae7d26bd7c6014d6c4618bafc.600x338.jpg?t=1736869775",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3109270/ss_d7c0c48c9d2ebb6ae7d26bd7c6014d6c4618bafc.1920x1080.jpg?t=1736869775"
+      }
+    ]
+  },
+  {
+    "id": "surangama",
+    "steamAppId": 3714430,
+    "title": "SURANGAMA",
+    "shortTitle": "SURANGAMA",
+    "subtitle": "Survival horror × character action in neon Diyu",
+    "status": "Coming Soon",
+    "releaseDate": "Q1 2028",
+    "comingSoon": true,
+    "blurb": "Unravel the truth and secrets which bind Tse Li Li to her forgotten past. Battle through hordes of relentless malformed souls and solve intricate puzzles in this Survival Horror X Character Action mashup set in a neon soaked Diyu, the Chinese-Buddhist vision of Hell, inspired by Kowloon Walled City.",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/library_600x900.jpg",
+    "header": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/901edd974a5168204fc149a79d96d92564d7168a/header.jpg?t=1772254215",
+    "href": "https://store.steampowered.com/app/3714430/SURANGAMA/",
+    "accent": "#c9a227",
+    "setting": "Diyu — Chinese-Buddhist Hell / Kowloon-inspired",
+    "protagonist": "Tse Li Li",
+    "genres": [
+      "Action",
+      "Adventure"
+    ],
+    "tags": [
+      "Action Horror",
+      "Diyu",
+      "Combat",
+      "Coming 2028"
+    ],
+    "features": [
+      "Neon-soaked Diyu inspired by Kowloon Walled City",
+      "Skill-based combat (Ninja Gaiden / Onimusha DNA)",
+      "Survival resource tension + boss battles",
+      "Spirit Mirror puzzles & psychological narrative",
+      "Combat Test Demo available on Steam"
+    ],
+    "developers": [
+      "SUZAKU Games"
+    ],
+    "publishers": [
+      "SUZAKU Games"
+    ],
+    "platforms": {
+      "windows": true,
+      "mac": false,
+      "linux": false
+    },
+    "price": "Wishlist",
+    "priceUsd": "Wishlist",
+    "reviewLabel": "Coming Soon",
+    "reviewPct": null,
+    "reviewCount": null,
+    "achievements": null,
+    "trailer": {
+      "name": "Kickstarter Launch Trailer",
+      "hls": "https://video.akamai.steamstatic.com/store_trailers/3714430/1688777862/b8fbc8cdf44693df3a5acc5e08394420311eac6d/1771632463/hls_264_master.m3u8?t=1771853169",
+      "thumbnail": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257290264/91144d29b1ba6947d0adb8471a7979f2b1b253a9/movie_600x337.jpg?t=1771853169"
+    },
+    "screenshots": [
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/952bf1ec6b32531cc12ab234a85964804ef4d152/ss_952bf1ec6b32531cc12ab234a85964804ef4d152.600x338.jpg?t=1772254215",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/952bf1ec6b32531cc12ab234a85964804ef4d152/ss_952bf1ec6b32531cc12ab234a85964804ef4d152.1920x1080.jpg?t=1772254215"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/61f9d17655f119d1f5ac0164014b222440b53d72/ss_61f9d17655f119d1f5ac0164014b222440b53d72.600x338.jpg?t=1772254215",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/61f9d17655f119d1f5ac0164014b222440b53d72/ss_61f9d17655f119d1f5ac0164014b222440b53d72.1920x1080.jpg?t=1772254215"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/057e867c96f11b7e47c4d700ed725d6c1f80a40a/ss_057e867c96f11b7e47c4d700ed725d6c1f80a40a.600x338.jpg?t=1772254215",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/057e867c96f11b7e47c4d700ed725d6c1f80a40a/ss_057e867c96f11b7e47c4d700ed725d6c1f80a40a.1920x1080.jpg?t=1772254215"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/caf27a7ba31000bcbb0d68ba0e94383c12907797/ss_caf27a7ba31000bcbb0d68ba0e94383c12907797.600x338.jpg?t=1772254215",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/caf27a7ba31000bcbb0d68ba0e94383c12907797/ss_caf27a7ba31000bcbb0d68ba0e94383c12907797.1920x1080.jpg?t=1772254215"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/9efe1224590a190f7d0d1c9ea4bf068a9a2e4a45/ss_9efe1224590a190f7d0d1c9ea4bf068a9a2e4a45.600x338.jpg?t=1772254215",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/9efe1224590a190f7d0d1c9ea4bf068a9a2e4a45/ss_9efe1224590a190f7d0d1c9ea4bf068a9a2e4a45.1920x1080.jpg?t=1772254215"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/ad5ef336f01e04f6b7fa4f09cb7a7b71f7d2ae82/ss_ad5ef336f01e04f6b7fa4f09cb7a7b71f7d2ae82.600x338.jpg?t=1772254215",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/ad5ef336f01e04f6b7fa4f09cb7a7b71f7d2ae82/ss_ad5ef336f01e04f6b7fa4f09cb7a7b71f7d2ae82.1920x1080.jpg?t=1772254215"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/9698fa35b5adeb4a232517e92415766459a8502b/ss_9698fa35b5adeb4a232517e92415766459a8502b.600x338.jpg?t=1772254215",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/9698fa35b5adeb4a232517e92415766459a8502b/ss_9698fa35b5adeb4a232517e92415766459a8502b.1920x1080.jpg?t=1772254215"
+      },
+      {
+        "thumb": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/fc5a15942f5d003df273934cd456026aa7829e94/ss_fc5a15942f5d003df273934cd456026aa7829e94.600x338.jpg?t=1772254215",
+        "full": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3714430/fc5a15942f5d003df273934cd456026aa7829e94/ss_fc5a15942f5d003df273934cd456026aa7829e94.1920x1080.jpg?t=1772254215"
+      }
+    ]
+  }
+]

@@ -70,17 +70,17 @@ export default function Hero() {
           className="mt-10 flex flex-wrap items-center gap-4"
         >
           <a
-            href="#games"
+            href="/#games"
             className="group relative overflow-hidden border border-phoenix bg-phoenix px-7 py-3.5 font-display text-sm tracking-[0.28em] uppercase text-void transition hover:bg-ember"
           >
             <span className="relative z-10">Escape</span>
             <span className="absolute inset-0 translate-x-[-110%] bg-gradient-to-r from-transparent via-white/30 to-transparent transition duration-700 group-hover:translate-x-[110%]" />
           </a>
           <a
-            href="#studio"
+            href="/#featured"
             className="border border-neon/40 px-7 py-3.5 font-display text-sm tracking-[0.28em] uppercase text-neon transition hover:border-neon hover:bg-neon/10"
           >
-            Enter the Fog
+            Watch SURANGAMA
           </a>
         </motion.div>
       </div>
