@@ -70,4 +70,9 @@
     mix-blend-mode: overlay;
     pointer-events: none;
   }
+
+  .vignette {
+    background: radial-gradient(ellipse at center, transparent 45%, rgb(0 0 0 / 0.55) 100%);
+    pointer-events: none;
+  }
 }

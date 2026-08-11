@@ -1,15 +1,18 @@
 ---
+import { STUDIO_LOGO } from '../data/brand';
 const year = new Date().getFullYear();
 ---
 
-<footer class="border-t border-white/10 bg-void py-10">
+<footer class="border-t border-white/10 bg-void py-12">
   <div
-    class="mx-auto flex max-w-7xl flex-col gap-6 px-5 md:flex-row md:items-center md:justify-between md:px-8"
+    class="mx-auto flex max-w-7xl flex-col gap-8 px-5 md:flex-row md:items-center md:justify-between md:px-8"
   >
-    <div>
-      <p class="font-display text-sm tracking-[0.28em] uppercase text-bone">SUZAKU Games</p>
+    <div class="max-w-md">
+      <img src={STUDIO_LOGO} alt="SUZAKU Games" class="mb-4 h-9 w-auto object-contain" />
+      <p class="font-display text-sm tracking-[0.28em] uppercase text-bone">SUZAKU Studio</p>
       <p class="mt-2 font-serif text-sm text-mute">
-        Demo rebuild for local preview — vibe inspired by the studio’s cyberpunk &amp; horror catalog.
+        Demo rebuild for client preview — cyberpunk &amp; horror atmosphere inspired by the studio
+        catalog.
       </p>
     </div>
     <div class="flex flex-wrap gap-5 font-display text-xs tracking-[0.2em] uppercase text-mute">

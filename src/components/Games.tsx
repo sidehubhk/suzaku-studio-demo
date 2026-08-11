@@ -1,6 +1,6 @@
-import { useMemo, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { games } from "../data/games";
+import { useMemo, useRef, useState, type MouseEvent } from "react";
+import { motion, AnimatePresence, useMotionTemplate, useMotionValue, useTransform } from "framer-motion";
+import { games, type Game } from "../data/games";
 
 const filters = ["All", "Available", "Upcoming"] as const;
 
@@ -32,6 +32,7 @@ export default function Games() {
                 key={f}
                 type="button"
                 onClick={() => setFilter(f)}
+                data-cursor="hot"
                 className={`border px-4 py-2 font-display text-[10px] tracking-[0.22em] uppercase transition ${
                   filter === f
                     ? "border-neon bg-neon/15 text-neon"
@@ -55,47 +56,87 @@ export default function Games() {
                 exit={{ opacity: 0, scale: 0.96 }}
                 transition={{ duration: 0.35 }}
               >
-                <a href={`/games/${game.id}`} className="group block outline-none" data-cursor="hot">
-                  <div
-                    className="relative aspect-[2/3] overflow-hidden border border-white/10 bg-panel transition duration-500 group-hover:border-[color:var(--accent)]"
-                    style={{ ["--accent" as string]: game.accent }}
-                  >
-                    <img
-                      src={game.cover}
-                      alt={`${game.shortTitle} cover`}
-                      className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent opacity-90" />
-                    <div className="absolute top-3 left-3 right-3 flex items-start justify-between gap-2">
-                      <span
-                        className="border px-2 py-1 font-display text-[9px] tracking-[0.18em] uppercase backdrop-blur"
-                        style={{ borderColor: `${game.accent}88`, color: game.accent }}
-                      >
-                        {game.status}
-                      </span>
-                      {game.reviewPct != null && (
-                        <span className="border border-white/20 bg-void/70 px-2 py-1 font-display text-[9px] tracking-[0.12em] text-bone backdrop-blur">
-                          {game.reviewPct}% · {game.reviewLabel}
-                        </span>
-                      )}
-                    </div>
-                    <div className="absolute inset-x-0 bottom-0 p-4">
-                      <h3 className="font-display text-xl tracking-[0.06em] text-bone">
-                        {game.shortTitle}
-                      </h3>
-                      <p className="mt-1 font-serif text-sm text-mute">{game.subtitle}</p>
-                      <p className="mt-3 font-display text-[10px] tracking-[0.2em] uppercase text-neon opacity-0 transition group-hover:opacity-100">
-                        Open dossier →
-                      </p>
-                    </div>
-                  </div>
-                </a>
+                <GameCard game={game} />
               </motion.li>
             ))}
           </AnimatePresence>
         </motion.ul>
       </div>
     </section>
+  );
+}
+
+function GameCard({ game }: { game: Game }) {
+  const ref = useRef<HTMLAnchorElement>(null);
+  const mx = useMotionValue(50);
+  const my = useMotionValue(50);
+  const mxPct = useTransform(mx, (v) => `${v}%`);
+  const myPct = useTransform(my, (v) => `${v}%`);
+  const shine = useMotionTemplate`radial-gradient(420px circle at ${mxPct} ${myPct}, ${game.accent}33, transparent 45%)`;
+
+  const onMove = (e: MouseEvent) => {
+    const el = ref.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const px = ((e.clientX - r.left) / r.width) * 100;
+    const py = ((e.clientY - r.top) / r.height) * 100;
+    mx.set(px);
+    my.set(py);
+    const rx = ((e.clientY - r.top) / r.height - 0.5) * -8;
+    const ry = ((e.clientX - r.left) / r.width - 0.5) * 8;
+    el.style.transform = `perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+  };
+
+  const onLeave = () => {
+    const el = ref.current;
+    if (!el) return;
+    el.style.transform = "perspective(900px) rotateX(0deg) rotateY(0deg)";
+    mx.set(50);
+    my.set(50);
+  };
+
+  return (
+    <a
+      ref={ref}
+      href={`/games/${game.id}`}
+      className="group block outline-none transition-transform duration-200 will-change-transform"
+      data-cursor="hot"
+      onMouseMove={onMove}
+      onMouseLeave={onLeave}
+    >
+      <div
+        className="relative aspect-[2/3] overflow-hidden border border-white/10 bg-panel transition duration-500 group-hover:border-[color:var(--accent)]"
+        style={{ ["--accent" as string]: game.accent }}
+      >
+        <img
+          src={game.cover}
+          alt={`${game.shortTitle} cover`}
+          className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.05]"
+          loading="lazy"
+        />
+        <motion.div className="pointer-events-none absolute inset-0 mix-blend-screen" style={{ backgroundImage: shine }} />
+        <div className="absolute inset-0 bg-gradient-to-t from-void via-transparent to-transparent opacity-90" />
+        <div className="absolute top-3 right-3 left-3 flex items-start justify-between gap-2">
+          <span
+            className="border px-2 py-1 font-display text-[9px] tracking-[0.18em] uppercase backdrop-blur"
+            style={{ borderColor: `${game.accent}88`, color: game.accent }}
+          >
+            {game.status}
+          </span>
+          {game.reviewPct != null && (
+            <span className="border border-white/20 bg-void/70 px-2 py-1 font-display text-[9px] tracking-[0.12em] text-bone backdrop-blur">
+              {game.reviewPct}% · {game.reviewLabel}
+            </span>
+          )}
+        </div>
+        <div className="absolute inset-x-0 bottom-0 p-4">
+          <h3 className="font-display text-xl tracking-[0.06em] text-bone">{game.shortTitle}</h3>
+          <p className="mt-1 font-serif text-sm text-mute">{game.subtitle}</p>
+          <p className="mt-3 font-display text-[10px] tracking-[0.2em] uppercase text-neon opacity-0 transition group-hover:opacity-100">
+            Open dossier →
+          </p>
+        </div>
+      </div>
+    </a>
   );
 }

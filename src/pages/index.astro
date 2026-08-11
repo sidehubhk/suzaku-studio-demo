@@ -8,11 +8,14 @@ import StatsBar from '../components/StatsBar';
 import FeaturedGame from '../components/FeaturedGame';
 import Games from '../components/Games';
 import ScreenshotMarquee from '../components/ScreenshotMarquee';
+import Timeline from '../components/Timeline';
 import Manifesto from '../components/Manifesto';
 import Newsletter from '../components/Newsletter';
 import BootSequence from '../components/BootSequence';
 import CustomCursor from '../components/CustomCursor';
 import AmbientAudio from '../components/AmbientAudio';
+import ScrollProgress from '../components/ScrollProgress';
+import SectionRail from '../components/SectionRail';
 ---
 
 <BaseLayout>
@@ -20,6 +23,8 @@ import AmbientAudio from '../components/AmbientAudio';
   <CustomCursor client:load />
   <BootSequence client:load />
   <AmbientAudio client:load />
+  <ScrollProgress client:load />
+  <SectionRail client:load />
   <Header client:load />
   <main>
     <Hero client:load />
@@ -27,6 +32,7 @@ import AmbientAudio from '../components/AmbientAudio';
     <FeaturedGame client:visible />
     <Games client:visible />
     <ScreenshotMarquee client:visible />
+    <Timeline client:visible />
     <Manifesto client:visible />
     <Newsletter client:visible />
   </main>

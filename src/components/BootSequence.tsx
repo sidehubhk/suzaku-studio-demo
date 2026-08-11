@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { STUDIO_LOGO } from "../data/brand";
 
 export default function BootSequence() {
   const [show, setShow] = useState(true);
@@ -33,15 +34,23 @@ export default function BootSequence() {
         <motion.div
           className="fixed inset-0 z-[100] flex items-center justify-center bg-void"
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 0.9 } }}
+          exit={{ opacity: 0, filter: "blur(8px)", transition: { duration: 0.95 } }}
         >
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,#e23a2b33,transparent_55%),radial-gradient(circle_at_70%_70%,#3de0ff22,transparent_45%)]" />
           <div className="absolute inset-0 grain opacity-40" />
           <div className="relative z-10 mx-auto max-w-lg px-6 text-center">
+            <motion.img
+              src={STUDIO_LOGO}
+              alt="SUZAKU Games"
+              initial={{ opacity: 0, y: 10, scale: 0.96 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ delay: 0.1, duration: 0.7 }}
+              className="mx-auto mb-8 h-14 w-auto max-w-[240px] object-contain drop-shadow-[0_0_28px_rgba(226,58,43,0.35)]"
+            />
             <motion.p
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.25 }}
               className="font-display text-xs tracking-[0.5em] uppercase text-neon"
             >
               SUZAKU STUDIO
@@ -68,6 +77,7 @@ export default function BootSequence() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.95 }}
               onClick={enter}
+              data-cursor="hot"
               className="mt-10 border border-phoenix bg-phoenix/90 px-10 py-3.5 font-display text-sm tracking-[0.32em] uppercase text-void transition hover:bg-ember"
             >
               Begin
