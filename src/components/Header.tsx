@@ -1,13 +1,15 @@
-import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { STUDIO_LOGO } from "../data/brand";
+import { useActiveSection } from "../hooks/useActiveSection";
 
 const NAV = [
   { href: "/#featured", id: "featured", label: "Featured" },
   { href: "/#games", id: "games", label: "Games" },
   { href: "/#studio", id: "studio", label: "Studio" },
   { href: "/#contact", id: "contact", label: "Contact" },
-];
+] as const;
+
+const NAV_IDS = NAV.map((n) => n.id);
 
 export default function Header() {
   const { scrollY } = useScroll();
@@ -17,24 +19,7 @@ export default function Header() {
     [0, 120],
     ["rgba(61,224,255,0)", "rgba(61,224,255,0.22)"],
   );
-  const [active, setActive] = useState("");
-
-  useEffect(() => {
-    const ids = NAV.map((n) => n.id);
-    const nodes = ids.map((id) => document.getElementById(id)).filter(Boolean) as HTMLElement[];
-    if (!nodes.length) return;
-    const io = new IntersectionObserver(
-      (entries) => {
-        const hit = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (hit?.target?.id) setActive(hit.target.id);
-      },
-      { rootMargin: "-40% 0px -45% 0px", threshold: [0.15, 0.4] },
-    );
-    nodes.forEach((n) => io.observe(n));
-    return () => io.disconnect();
-  }, []);
+  const [active, setActive] = useActiveSection(NAV_IDS, "");
 
   return (
     <motion.header
@@ -58,6 +43,7 @@ export default function Header() {
                 key={item.id}
                 href={item.href}
                 data-cursor="hot"
+                onClick={() => setActive(item.id)}
                 className={`relative transition ${
                   isActive ? "text-neon" : "text-mute hover:text-bone"
                 }`}
@@ -87,6 +73,7 @@ export default function Header() {
           <a
             href="/#games"
             data-cursor="hot"
+            onClick={() => setActive("games")}
             className="border border-phoenix/60 bg-phoenix/15 px-3 py-2 font-display text-xs tracking-[0.22em] uppercase text-bone transition hover:border-phoenix hover:bg-phoenix/30"
           >
             Escape

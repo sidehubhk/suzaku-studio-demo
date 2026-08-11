@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useActiveSection } from "../hooks/useActiveSection";
 
 const SECTIONS = [
   { id: "top", label: "01" },
@@ -7,29 +7,12 @@ const SECTIONS = [
   { id: "games", label: "03" },
   { id: "studio", label: "04" },
   { id: "contact", label: "05" },
-];
+] as const;
+
+const SECTION_IDS = SECTIONS.map((s) => s.id);
 
 export default function SectionRail() {
-  const [active, setActive] = useState("top");
-
-  useEffect(() => {
-    const nodes = SECTIONS.map((s) => document.getElementById(s.id)).filter(
-      Boolean,
-    ) as HTMLElement[];
-    if (!nodes.length) return;
-
-    const io = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible?.target?.id) setActive(visible.target.id);
-      },
-      { rootMargin: "-35% 0px -45% 0px", threshold: [0.1, 0.35, 0.6] },
-    );
-    nodes.forEach((n) => io.observe(n));
-    return () => io.disconnect();
-  }, []);
+  const [active, setActive] = useActiveSection(SECTION_IDS, "top");
 
   return (
     <nav
@@ -41,7 +24,8 @@ export default function SectionRail() {
         return (
           <a
             key={s.id}
-            href={`/#${s.id === "top" ? "top" : s.id}`}
+            href={`/#${s.id}`}
+            onClick={() => setActive(s.id)}
             className="group flex items-center justify-end gap-2"
             data-cursor="hot"
             aria-current={isActive ? "true" : undefined}
