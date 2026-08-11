@@ -46,6 +46,35 @@
   html.has-custom-cursor.cursor-active * {
     cursor: none !important;
   }
+
+  html.review-shield {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  html.review-shield img {
+    -webkit-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+  }
+
+  /* Keep interactive controls usable */
+  html.review-shield a,
+  html.review-shield button,
+  html.review-shield input,
+  html.review-shield textarea,
+  html.review-shield video,
+  html.review-shield [data-cursor="hot"] {
+    pointer-events: auto;
+  }
+
+  html.review-locked main,
+  html.review-locked header,
+  html.review-locked footer {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
 }
 
 @layer utilities {

@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import ReviewGate from '../components/ReviewGate';
+import ReviewShield from '../components/ReviewShield';
 
 interface Props {
   title?: string;
@@ -7,8 +9,8 @@ interface Props {
 }
 
 const {
-  title = 'SUZAKU Games | Cyberpunk & Horror Indie Studio',
-  description = 'SUZAKU is a game studio founded on pure escapism — cyberpunk atmospheres and East Asian ghost stories.',
+  title = 'SUZAKU Games | Private Client Review',
+  description = 'Confidential client review build. Unauthorized distribution prohibited.',
 } = Astro.props;
 ---
 
@@ -17,9 +19,12 @@ const {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="referrer" content="no-referrer" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#030306" />
+    <meta http-equiv="Cache-Control" content="no-store" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,6 +38,8 @@ const {
     <div class="pointer-events-none fixed inset-0 z-[60] grain" aria-hidden="true"></div>
     <div class="pointer-events-none fixed inset-0 z-[59] scanlines opacity-40" aria-hidden="true"></div>
     <div class="pointer-events-none fixed inset-0 z-[58] vignette" aria-hidden="true"></div>
+    <ReviewGate client:load />
+    <ReviewShield client:load />
     <slot />
   </body>
 </html>

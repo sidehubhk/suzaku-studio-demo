@@ -13,11 +13,17 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     server: {
-      // Allow LAN partners to open http://<your-ip>:4321
       allowedHosts: true,
       cors: true,
     },
+    build: {
+      sourcemap: false,
+      minify: 'esbuild',
+      cssMinify: true,
+      // Reduce easy reconstruction of modules
+      modulePreload: { polyfill: false },
+    },
   },
 
-  integrations: [react()]
+  integrations: [react()],
 });
