@@ -59,7 +59,7 @@ export default function Manifesto() {
           <dl className="mt-10 grid gap-6 border-t border-white/10 pt-8 sm:grid-cols-3">
             {[
               { label: "Founded", value: "2017" },
-              { label: "Signal", value: "Horror / Cyberpunk" },
+              { label: "Focus", value: "Horror / Cyberpunk" },
               { label: "North Star", value: "Escapism" },
             ].map((stat) => (
               <div key={stat.label}>

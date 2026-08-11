@@ -12,12 +12,12 @@ export default function Newsletter() {
   };
 
   return (
-    <section id="signal" className="relative border-t border-neon/15 bg-panel py-24 md:py-28">
+    <section id="contact" className="relative border-t border-neon/15 bg-panel py-24 md:py-28">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,#3de0ff18,transparent_35%),radial-gradient(circle_at_10%_80%,#e23a2b14,transparent_40%)]" />
       <div className="relative mx-auto grid max-w-7xl gap-12 px-5 md:grid-cols-2 md:items-center md:px-8">
         <div>
           <p className="mb-3 font-display text-xs tracking-[0.4em] uppercase text-neon">
-            Signal // 03
+            Contact // 03
           </p>
           <h2 className="font-display text-4xl tracking-[0.1em] uppercase text-bone md:text-5xl">
             Get Updates

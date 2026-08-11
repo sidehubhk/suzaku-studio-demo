@@ -124,7 +124,7 @@ export default function TrailerPlayer({
                   <>
                     {!ready && (
                       <div className="absolute inset-0 grid place-items-center font-display text-xs tracking-[0.3em] uppercase text-neon">
-                        Buffering signal…
+                        Loading trailer…
                       </div>
                     )}
                     <video

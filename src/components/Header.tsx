@@ -6,7 +6,7 @@ const NAV = [
   { href: "/#featured", id: "featured", label: "Featured" },
   { href: "/#games", id: "games", label: "Games" },
   { href: "/#studio", id: "studio", label: "Studio" },
-  { href: "/#signal", id: "signal", label: "Signal" },
+  { href: "/#contact", id: "contact", label: "Contact" },
 ];
 
 export default function Header() {

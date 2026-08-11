@@ -6,7 +6,7 @@ const SECTIONS = [
   { id: "featured", label: "02" },
   { id: "games", label: "03" },
   { id: "studio", label: "04" },
-  { id: "signal", label: "05" },
+  { id: "contact", label: "05" },
 ];
 
 export default function SectionRail() {

@@ -42,5 +42,5 @@ export const studioStats = [
   { label: "Titles", value: "4" },
   { label: "Sense Reviews", value: "83%+" },
   { label: "Founded", value: "2017" },
-  { label: "Signal", value: "Escapism" },
+  { label: "Focus", value: "Escapism" },
 ];
